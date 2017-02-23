@@ -12,7 +12,7 @@ Thus, the following HTML code
 
 `<B>This is an <em>example of </B>overlapping tags</em>`
 
-is not valid in XHTML, since it is not valid XML. \(See Chapter 23 for more detail.\) The &lt;br&gt; tags need to be closed either by an accompanying &lt;/br&gt; tag or by replacing them with the empty tag, &lt;br/&gt;. Similarly, the &lt;b&gt; and &lt;em&gt; tags are not allowed to overlap. To write this code in XHTML, we simply need to change it to
+is not valid in XHTML, since it is not valid XML. The &lt;br&gt; tags need to be closed either by an accompanying &lt;/br&gt; tag or by replacing them with the empty tag, &lt;br/&gt;. Similarly, the &lt;b&gt; and &lt;em&gt; tags are not allowed to overlap. To write this code in XHTML, we simply need to change it to
 
 `<br/>`
 
@@ -20,11 +20,11 @@ is not valid in XHTML, since it is not valid XML. \(See Chapter 23 for more deta
 
 `<b>This is an <em>example of</em></b><em>overlapping tags</em>`
 
-For those who are unfamiliar with XHTML, we will provide more details on it in Chapter 23. For now, it is worth noting that it is not very different from regular HTML, barring the exceptions we mentioned previously. Throughout this book, we will use HTML and XTHML interchangeablywhen we mention the former, chances are we are writing about the latter.
+
 
 When designing the user interface for our application, it is important to think of how we want the users to interact with it. If we have a highly functional web application with all the features we could possibly want, but it is completely counterintuitive and indecipherable to the end user, we have failed in our goal of providing a useful web application.
 
-As we will see in Chapter 14, it is very important to plan the interface to our application in advance, have a few people review it, and even prototype it in simple HTML \(without any of the logic behind it hooked up\) to see how people react to it. More time spent planning at the beginning of the project translates into less time spent on painful rewrites later on.
+**It is very important to plan the interface to our application in advance, have a few people review it, and even prototype it in simple HTML \(without any of the logic behind it hooked up\) to see how people react to it. More time spent planning at the beginning of the project translates into less time spent on painful rewrites later on.**
 
 # Layer 2 - Business Logic
 
@@ -94,7 +94,7 @@ Properties:
 
 }
 
-Given these crude specifications for our objects, we could then implement them and create a bizlogic directory and a number of .inc files that implement the various classes needed for this functionality. If our UserManager and User objects were sufficiently complex, we could create a separate userman directory for them and put other middle-tier functionality, such as payment systems, order tracking systems, or product catalogues into their own directories. Referring back to Chapter 3, "Code Organization and Reuse," we might choose a layout similar to the following:
+Given these crude specifications for our objects, we could then implement them and create a bizlogic directory and a number of .inc files that implement the various classes needed for this functionality. If our UserManager and User objects were sufficiently complex, we could create a separate userman directory for them and put other middle-tier functionality, such as payment systems, order tracking systems, or product catalogues into their own directories. We might choose a layout similar to the following:
 
 Web Site Directory Layout:
 

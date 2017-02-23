@@ -24,11 +24,9 @@ While this does have the advantage of being reasonably quick to code, the drawba
 
 Thus, we will choose to use a multi-tired approach for the server portion of our web application, where we split key pieces of functionality into isolatable units. We will use a common "3-layer" approach:
 
-
-
 > Application Layer / User Interface &lt;--&gt; Business Logic Layer &lt;--&gt; Data Layer / Database
 
-This architecture provides us with a good balance between modularization of our code for all of the reasons listed previously but does not prove to be so overly modularized that it becomes a problem. \(See the later section titled "n-Tier Architectures."\)
+This architecture provides us with a good balance between modularization of our code for all of the reasons listed previously but does not prove to be so overly modularized that it becomes a problem.
 
 Please note that even though these different modules or tiers are logically separate, they do not have to reside on different computers or different processes within a given computer. In fact, for a vast majority of the samples we provide, these divisions are more logical than anything else. In particular, the first two tiers reside in the same instance of the web server and PHP language engine. The power of web applications lies in the fact that they can be split apart and moved to new machines as needs change, which lets us scale our systems as necessary.
 
